@@ -8,12 +8,14 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+
+	<context:annotation-config />
 	<bean class="com.springcore.auto.wire.Address" name="address1">
 		<property name="street" value="Temp Street" />
 		<property name="city" value="Delhi" />
 
 	</bean>
-	<bean class="com.springcore.auto.wire.Address" name="address">
+	<bean class="com.springcore.auto.wire.Address" name="address2">
 		<property name="street" value="BP path" />
 		<property name="city" value="Bhairahawa" />
 
@@ -21,7 +23,7 @@
 
 
 	<bean class="com.springcore.auto.wire.Emp" name="emp1"
-		autowire="constructor" />
+	/>
 
 </beans>
 
