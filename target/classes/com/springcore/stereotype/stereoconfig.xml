@@ -13,6 +13,12 @@
 
 	<context:component-scan base-package="com.springcore.stereotype"/>
 
+	<util:list list-class="java.util.ArrayList" id="temp">
+		<value>Bhairahawa</value>
+		<value>Kathmandu</value>
+		<value>Butwal</value>
+	</util:list>
 	
+	<bean class="com.springcore.stereotype.Teacher" name="teacher" scope="prototype"/>
 </beans>
 
