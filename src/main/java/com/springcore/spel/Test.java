@@ -15,9 +15,10 @@ public class Test {
 		
 		System.out.println(d1);
 		
-		SpelExpressionParser temp =  new SpelExpressionParser();
-		Expression expression = temp.parseExpression("22+44");
-		System.out.println(expression.getValue());
+		/*
+		 * SpelExpressionParser temp = new SpelExpressionParser(); Expression expression
+		 * = temp.parseExpression("22+44"); System.out.println(expression.getValue());
+		 */
 	}
 
 }

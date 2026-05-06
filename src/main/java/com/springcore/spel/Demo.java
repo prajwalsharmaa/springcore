@@ -9,6 +9,18 @@ public class Demo {
 	private int x;
 	@Value("#{2+3+8}")
 	private int y;
+	@Value("#{T(java.lang.Math).sqrt(25)}")
+	private double z;
+	@Value("#{T(java.lang.Math).E}")
+	private double e;
+	@Value("#{new java.lang.String('Prajwal Sharma')}")
+	private String name;
+	public double getZ() {
+		return z;
+	}
+	public void setZ(double z) {
+		this.z = z;
+	}
 	public int getX() {
 		return x;
 	}
@@ -21,10 +33,18 @@ public class Demo {
 	public void setY(int y) {
 		this.y = y;
 	}
+	
+	public double getE() {
+		return e;
+	}
+	public void setE(double e) {
+		this.e = e;
+	}
 	@Override
 	public String toString() {
-		return "Demo [x=" + x + ", y=" + y + "]";
+		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", e=" + e +", name=" + name +"]";
 	}
+	
 	
 	
 }
