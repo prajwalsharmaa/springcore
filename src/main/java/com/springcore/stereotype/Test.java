@@ -22,6 +22,8 @@ public class Test {
 		Teacher t1 = (Teacher) context.getBean("teacher",Teacher.class);
 		Teacher t2 = (Teacher) context.getBean("teacher",Teacher.class);
 		System.out.println(t1.hashCode() + "  "+ t2.hashCode());
+		
+		
 	}
 
 }
